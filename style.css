@@ -53,3 +53,49 @@ h1,.section-head h2,.contact h2,.resume-inner h2{font-family:'Playfair Display',
 .contact-details a{border-color:var(--line);color:var(--text)}
 footer{color:var(--dim)}
 @media(max-width:620px){.core-card{background:#FFFCF7}}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+}
+
+.profile-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-row:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.profile-label {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.profile-content h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.profile-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .profile-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
