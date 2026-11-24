@@ -53,4 +53,16 @@ h1,.section-head h2,.contact h2,.resume-inner h2{font-family:'Playfair Display',
 .contact-details a{border-color:var(--line);color:var(--text)}
 footer{color:var(--dim)}
 @media(max-width:620px){.core-card{background:#FFFCF7}}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
 
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
